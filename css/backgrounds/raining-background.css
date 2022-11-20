@@ -1,0 +1,36 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+
+.backgrond-container{
+    width: 100%;
+    height: 100vh;
+    background: url("../../images/car-3.png") no-repeat center;
+    background-size: cover;
+}
+
+.rainDrop-container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.rain-drop{
+    background-color: rgb(150, 190, 243);
+    border-radius: 50%;
+    opacity: 70%;
+    position: absolute;
+    z-index: 500;
+    animation: snow-falling 2s ease-in infinite;
+    transform: rotate(45deg);
+}
+
+@keyframes snow-falling {
+    0%{
+     transform: translate(0, 0);
+     opacity: 70%;
+    }
+    100%{
+        transform: translate(-20vw, 100vh);
+        opacity: 20%;
+    }
+}

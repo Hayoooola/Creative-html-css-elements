@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Teko&display=swap');
+
+*{
+    padding: 0;margin: 0;box-sizing: border-box;font-family:'Teko', sans-serif;
+}
+header{
+    background: url(../../images/header1.jpg) no-repeat right;
+    width: 100%;
+    height: 540px;
+    background-position: center;
+    background-size: cover;
+}
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 540px;
+    backdrop-filter: grayscale(100%);
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0 0.5rem;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.89), rgba(171, 127, 80, 0.89));
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    animation: fade-in 1s ease-out;
+
+}
+
+.menu-item{
+    margin: .25rem 2.5rem;
+    font-size: 2vw;
+    z-index: 500;
+}
+.menu-item a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.nav-header{
+    display: flex;
+    margin: 7% 0;
+}
+
+.nav-header h2{
+    width: 50%;
+    font-size: 7vw;
+    animation: fade-in 1s ease-out;
+
+}
+
+.nav-header :nth-child(1){
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.nav-header :nth-child(2){
+    color:rgba(84, 177, 149, 0.89);
+    mix-blend-mode:color-burn;
+}
+
+.nav-text{
+    width: 50%;
+    color: #fff;
+    padding: 3rem;
+    margin-top: -3rem;
+}
+
+.nav-text p {
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 1rem;
+    line-height: 1.5em;
+    animation: fade-in 2s ease-out;
+}
+.nav-btn{
+    padding: .25rem 1rem;
+    font-size: 1.5rem;
+    background-color: rgba(171, 127, 80, 0.89);
+    color: #fff;
+    border: none;
+    border-radius: .2rem;
+    box-shadow: 0 0 3px 0 #333;
+    animation: fade-in 1s ease-out;
+
+}
+
+@keyframes fade-in {
+    0%{
+        opacity: 0%;
+        transform: scale(.8);
+    }
+
+    100%{
+        opacity: 100%;
+        transform: scale(1);
+    }
+}
